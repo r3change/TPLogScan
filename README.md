@@ -24,14 +24,17 @@ optional arguments:
   -m MONTH, --month MONTH
                         datetime month, default 1
   -d DAY, --day DAY     datetime day, default 1
-  
-  
-# 扫描ThinkPHP3 1月-本月的网站所有日志
-python3 TPLogScan.py -u URL
+```
 
-# 扫描ThinkPHP5 12月的网站所有日志
+扫描ThinkPHP3 1月-本月的网站所有日志
+```
+python3 TPLogScan.py -u URL
+```
+
+扫描ThinkPHP5 12月的网站所有日志
+```
 python3 TPLogScan.py -u URL -v 5 -m 12
 ```
 
 扫描结果保存在 `/TPLogData/{URL}/` 目录下
-![](log.png)
+![](log.jpg)
