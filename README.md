@@ -3,6 +3,8 @@ ThinkPHP3和5全日志扫描脚本
 ### 安装
 
 ```
+git clone https://github.com/r3change/TPLogScan.git
+cd TPLogScan/
 pip install -r requirements.txt
 ```
 
@@ -26,15 +28,15 @@ optional arguments:
   -d DAY, --day DAY     datetime day, default 1
 ```
 
-扫描ThinkPHP3 1月-本月的网站所有日志
+扫描TP3 1月-本月的网站所有日志
 ```
 python3 TPLogScan.py -u URL
 ```
 
-扫描ThinkPHP5 12月的网站所有日志
+扫描TP5 12月的网站所有日志
 ```
 python3 TPLogScan.py -u URL -v 5 -m 12
 ```
 
-扫描结果保存在 `/TPLogData/{URL}/` 目录下
+扫描结果自动保存在 `/TPLogData/{URL}/` 目录下
 ![](log.jpg)
