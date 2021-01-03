@@ -13,7 +13,8 @@ pip install -r requirements.txt
 ```
 > python3 TPLogScan.py -h
 
-usage: TPLogScan.py [-h] [-u URL] [-v {3,5}] [-p PATH] [-y YEAR] [-m MONTH] [-d DAY]
+usage: TPLogScan.py [-h] [-u URL] [-v {3,5}] [-p PATH] [-y YEAR] [-m MONTH]
+                    [-d DAY]
 
 Thinkphp 3 or 5 log file scan!
 
@@ -23,9 +24,9 @@ optional arguments:
   -v {3,5}, --version {3,5}
                         thinkphp version, default 3
   -p PATH, --path PATH  log path
-  -y YEAR, --year YEAR  datetime year, default 2020
+  -y YEAR, --year YEAR  datetime start year, default this year
   -m MONTH, --month MONTH
-                        datetime start month, default 1
+                        datetime start month, default this month
   -d DAY, --day DAY     datetime start day, default 1
 ```
 
@@ -46,4 +47,5 @@ python3 TPLogScan.py -u URL -v 5 -p /runtime/log/ -m 12 -d 25
 
 
 扫描结果自动保存在 `/TPLogData/{URL}/` 目录下
+
 ![日志结果](log.jpg)
