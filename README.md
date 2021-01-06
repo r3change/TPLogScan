@@ -79,7 +79,7 @@ https://www.jython.org/download.html
 
 插件添加后会新建一个标签页面板
 
-![](./images/4.png）
+![](./images/4.png)
 
 ### 使用
 
