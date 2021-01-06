@@ -1,4 +1,6 @@
-ThinkPHP3和5全日志扫描脚本
+ThinkPHP3和5全日志扫描工具，命令行版和BurpSuite插件版
+
+## 命令行版
 
 ### 安装
 
@@ -45,7 +47,44 @@ python3 TPLogScan.py -u URL -v 5 -m 12
 python3 TPLogScan.py -u URL -v 5 -p /runtime/log/ -m 12 -d 25
 ```
 
+扫描截图
+
+![](./images/1.png)
+
 
 扫描结果自动保存在 `/TPLogData/{URL}/` 目录下
 
 ![日志结果](log.jpg)
+
+
+
+## BurpSuite插件版
+
+### 安装
+
+插件使用Python编写，使用需要先下载 Jython，并在 BurpSuite 中配置
+
+Jython下载地址
+```
+https://www.jython.org/download.html
+```
+
+配置Jython环境
+
+![](./images/2.png)
+
+添加插件
+
+![](./images/3.png)
+
+插件添加后会新建一个标签页面板
+
+![](./images/4.png
+
+### 使用
+
+右键菜单选择TPLogScan，根据ThinkPHP版本选择子菜单项，选择后会自动爬取近30天的日志，会将请求记录在新建的面板中
+
+![](./images/5.png)
+![](./images/6.png)
+
