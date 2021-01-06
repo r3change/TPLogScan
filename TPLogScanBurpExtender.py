@@ -236,9 +236,9 @@ class BurpExtender(IBurpExtender, IContextMenuFactory, ITab, IHttpListener, IMes
             print("[*] url: {}".format(url))
 
             datetime_now = datetime.datetime.now()
-            year = (datetime_now - datetime.timedelta(days=60)).year
-            month = (datetime_now - datetime.timedelta(days=60)).month
-            day = (datetime_now - datetime.timedelta(days=60)).day
+            year = (datetime_now - datetime.timedelta(days=30)).year
+            month = (datetime_now - datetime.timedelta(days=30)).month
+            day = (datetime_now - datetime.timedelta(days=30)).day
 
             tplogscan  = TPLogScan(url, version, year, month, day)
             log_path = tplogscan.checkLogPath()
