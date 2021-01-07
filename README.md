@@ -1,4 +1,4 @@
-ThinkPHP3和5全日志扫描工具，命令行版和BurpSuite插件版
+ThinkPHP3和5日志扫描工具，提供命令行版和BurpSuite插件版，尽可能全的发掘网站日志信息
 
 ## 命令行版
 
