@@ -285,7 +285,6 @@ class BurpExtender(IBurpExtender, IContextMenuFactory, ITab, IHttpListener, IMes
                         response, status_code = self.sendRequest(http_service, new_request)
                         if status_code == 200:
                             now_filename = tmp_filename
-                            flag = False
                             break
             except Exception as e:
                 print("[-] error: {}".format(e))
