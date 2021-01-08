@@ -135,8 +135,6 @@ if __name__ == "__main__":
                         with open(os.path.join(dir_path, tmp_filename.replace('/', '_')), 'w', encoding='utf-8') as f:
                             f.write(html)
                         now_filename = tmp_filename
-                        html = ''
-                        flag = False
                         break
         except Exception as e:
             print("[-] error: {}".format(e))
